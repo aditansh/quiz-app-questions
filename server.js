@@ -2,6 +2,8 @@ const express = require('express')
 const app = express()
 const path = require('path')
 const bodyParser = require('body-parser')
+let cors = require('cors')
+app.use(cors());
 const Quiz=[
     {
         "type": 'text',
